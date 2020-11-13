@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.7.0 on darwin)" generated="20201106 14:36:59.714" rpa="false">
+<suite id="s1" name="Assignment1" source="/Users/pawariswongsalung/Documents/swt-workshop/Homework/Assignment1.robot">
+<test id="s1-t1" name="Test login and post tweet on Twitter">
+<kw name="Type twitter.com">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20201106 14:36:59.864" level="INFO">Opening browser 'chrome' to base url 'https://twitter.com/login'.</msg>
+<status status="PASS" starttime="20201106 14:36:59.864" endtime="20201106 14:37:02.849"></status>
+</kw>
+<status status="PASS" starttime="20201106 14:36:59.863" endtime="20201106 14:37:02.849"></status>
+</kw>
+<kw name="Search element login">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Log in to Twitter</arg>
+</arguments>
+<status status="PASS" starttime="20201106 14:37:02.851" endtime="20201106 14:37:03.074"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="react-root"]/div/div/div[2]/main/div/div/div[1]/form/div/div[1]/label/div/div[2]/div/input</arg>
+<arg>${id}</arg>
+</arguments>
+<msg timestamp="20201106 14:37:03.075" level="INFO">Typing text 'kabillza' into text field '//*[@id="react-root"]/div/div/div[2]/main/div/div/div[1]/form/div/div[1]/label/div/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20201106 14:37:03.075" endtime="20201106 14:37:03.223"></status>
+</kw>
+<status status="PASS" starttime="20201106 14:37:02.850" endtime="20201106 14:37:03.224"></status>
+</kw>
+<kw name="Search element password">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="react-root"]/div/div/div[2]/main/div/div/div[1]/form/div/div[2]/label/div/div[2]/div/input</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20201106 14:37:03.224" level="INFO">Typing text 'ba6351' into text field '//*[@id="react-root"]/div/div/div[2]/main/div/div/div[1]/form/div/div[2]/label/div/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20201106 14:37:03.224" endtime="20201106 14:37:03.325"></status>
+</kw>
+<status status="PASS" starttime="20201106 14:37:03.224" endtime="20201106 14:37:03.326"></status>
+</kw>
+<kw name="Click submit">
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>//*[@id="react-root"]/div/div/div[2]/main/div/div/div[1]/form/div/div[3]/div/div</arg>
+<arg>RETURN</arg>
+</arguments>
+<msg timestamp="20201106 14:37:03.327" level="INFO">Sending key(s) ('RETURN',) to //*[@id="react-root"]/div/div/div[2]/main/div/div/div[1]/form/div/div[3]/div/div element.</msg>
+<msg timestamp="20201106 14:37:05.398" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20201106 14:37:05.398" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20201106 14:37:03.326" endtime="20201106 14:37:05.448"></status>
+</kw>
+<status status="PASS" starttime="20201106 14:37:03.326" endtime="20201106 14:37:05.448"></status>
+</kw>
+<kw name="Enter sentence">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="react-root"]/div/div/div[2]/main/div/div/div/div/div/div[2]/div/div[2]/div[1]/div/div/div/div[2]/div[1]/div/div/div/div/div/div/div/div/div/div[1]/div/div/div/div[2]/div/div/div/div</arg>
+<arg>${sentence}</arg>
+</arguments>
+<msg timestamp="20201106 14:37:05.449" level="INFO">Typing text 'สวัสดี robot framework' into text field '//*[@id="react-root"]/div/div/div[2]/main/div/div/div/div/div/div[2]/div/div[2]/div[1]/div/div/div/div[2]/div[1]/div/div/div/div/div/div/div/div/div/div[1]/div/div/div/div[2]/div/div/div/div'.</msg>
+<status status="PASS" starttime="20201106 14:37:05.449" endtime="20201106 14:37:05.953"></status>
+</kw>
+<status status="PASS" starttime="20201106 14:37:05.448" endtime="20201106 14:37:05.953"></status>
+</kw>
+<kw name="Press tweet">
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>//*[@id="react-root"]/div/div/div[2]/main/div/div/div/div/div/div[2]/div/div[2]/div[1]/div/div/div/div[2]/div[4]/div/div/div[2]/div[3]</arg>
+<arg>RETURN</arg>
+</arguments>
+<msg timestamp="20201106 14:37:05.954" level="INFO">Sending key(s) ('RETURN',) to //*[@id="react-root"]/div/div/div[2]/main/div/div/div/div/div/div[2]/div/div[2]/div[1]/div/div/div/div[2]/div[4]/div/div/div[2]/div[3] element.</msg>
+<msg timestamp="20201106 14:37:06.803" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20201106 14:37:06.803" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20201106 14:37:05.954" endtime="20201106 14:37:06.921"></status>
+</kw>
+<status status="PASS" starttime="20201106 14:37:05.953" endtime="20201106 14:37:06.921"></status>
+</kw>
+<status status="PASS" starttime="20201106 14:36:59.863" endtime="20201106 14:37:06.922" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201106 14:36:59.721" endtime="20201106 14:37:06.923"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Assignment1">Assignment1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
